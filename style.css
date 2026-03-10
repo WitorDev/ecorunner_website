@@ -299,6 +299,58 @@ section {
 }
 
 /* =========================
+   FOOTER
+========================= */
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: var(--primary-background);
+  border-top: 1px solid var(--quaternary-accent);
+  margin-top: 60px;
+}
+
+footer .container {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Footer menu */
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+footer ul li {
+  border-radius: 4px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--primary-foreground);
+  padding: 20px 10px;
+  font-size: 14px;
+}
+
+footer ul li:hover {
+  background: var(--quaternary-accent);
+}
+
+/* Footer text */
+
+footer p {
+  font-size: 14px;
+  color: var(--primary-foreground);
+  opacity: 0.8;
+}
+
+/* =========================
    UTILITIES
 ========================= */
 
