@@ -10,7 +10,10 @@
       content="EcoRunner é um jogo 2D gratuito desenvolvido na UniFil com foco em conscientização ambiental através da diversão."
     />
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -21,10 +24,10 @@
   </head>
 
   <body class="dark-mode">
-    <!-- header -->
+    <!-- HEADER -->
     <header>
-      <nav>
-        <img src="logo.png" alt="EcoRunner Logo" />
+      <nav class="container">
+        <img src="logo.png" alt="Logo do EcoRunner" />
 
         <ul>
           <li><a href="#hero">Home</a></li>
@@ -34,32 +37,62 @@
       </nav>
     </header>
 
-    <!-- hero -->
+    <!-- HERO -->
     <section id="hero" class="hero">
       <div class="container">
-        <h1>EcoRunner</h1>
-        <p>Você é rápido o suficiente para salvar o mundo?</p>
+        <!-- <h1>EcoRunner</h1>
+        <p>Você é rápido o suficiente para salvar o mundo?</p> -->
       </div>
     </section>
 
-    <!-- about -->
+    <!-- CALL TO ACTION -->
+    <div class="cta-section">
+      <div class="cta-panel container">
+        <p>Jogue agora e ajude o planeta!</p>
+
+        <div class="button-list">
+          <button class="download-button"><b>Jogar</b></button>
+          <button class="play-button"><b>Download</b></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
     <section id="about">
       <div class="container">
-        <article>
-          <h1>Sobre</h1>
-          <p>
-            EcoRunner é um projeto feito por alunos da UniFil Londrina para o
-            curso de Ciência da Computação. O objetivo é conscientizar sobre a
-            sustentabilidade ambiental de forma divertida!
-          </p>
+        <h1>De Onde Veio o EcoRunner?</h1>
+
+        <article class="unifil">
+          <img src="images/unifil.png" alt="Logo da UniFil" />
+
+          <div>
+            <p>
+              EcoRunner é um projeto feito por alunos da
+              <b>UniFil - Universidade Filadélfia de Londrina</b> para o curso
+              de Ciência da Computação.
+            </p>
+
+            <p>
+              O objetivo do jogo é conscientizar sobre sustentabilidade
+              ambiental de forma divertida.
+            </p>
+          </div>
         </article>
 
         <article>
-          <h1>Quem fez o projeto?</h1>
+          <div class="text-box">
+            <h1>Quem fez o projeto?</h1>
+
+            <p>
+              Todo o jogo foi criado pelos alunos, desde a Pixel Art até o
+              código. Todos colaboraram com a realização do projeto para
+              trazermos o EcoRunner à realidade.
+            </p>
+          </div>
 
           <div class="author-panel">
             <div class="author-card">
-              <img src="images/authors/author.png" alt="Foto do Autor" />
+              <img src="images/authors/author.png" alt="Foto de Witor Tenã" />
               <div>
                 <h4>Witor Tenã</h4>
                 <p>Programador</p>
@@ -67,7 +100,10 @@
             </div>
 
             <div class="author-card">
-              <img src="images/authors/author.png" alt="Foto do Autor" />
+              <img
+                src="images/authors/author.png"
+                alt="Foto de Rafael Utiyama"
+              />
               <div>
                 <h4>Rafael Utiyama</h4>
                 <p>Programador</p>
@@ -75,7 +111,7 @@
             </div>
 
             <div class="author-card">
-              <img src="images/authors/author.png" alt="Foto do Autor" />
+              <img src="images/authors/author.png" alt="Foto de Marcos Yudi" />
               <div>
                 <h4>Marcos Yudi</h4>
                 <p>Programador</p>
@@ -83,7 +119,10 @@
             </div>
 
             <div class="author-card">
-              <img src="images/authors/author.png" alt="Foto do Autor" />
+              <img
+                src="images/authors/author.png"
+                alt="Foto de Thiago Antoniassi"
+              />
               <div>
                 <h4>Thiago Antoniassi</h4>
                 <p>Programador</p>
