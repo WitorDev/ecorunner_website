@@ -3,6 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-gold-50: #fffae5;
+        --color-gold-100: #fff6cc;
+        --color-gold-200: #ffec99;
+        --color-gold-300: #ffe366;
+        --color-gold-400: #ffda33;
+        --color-gold-500: #ffd000;
+        --color-gold-600: #cca700;
+        --color-gold-700: #997d00;
+        --color-gold-800: #665300;
+        --color-gold-900: #332a00;
+        --color-gold-950: #241d00;
+
+        --color-cloudy-sky-50: #e9f1fc;
+        --color-cloudy-sky-100: #d3e4f8;
+        --color-cloudy-sky-200: #a7c8f1;
+        --color-cloudy-sky-300: #7badea;
+        --color-cloudy-sky-400: #4f92e3;
+        --color-cloudy-sky-500: #2276dd;
+        --color-cloudy-sky-600: #1c5fb0;
+        --color-cloudy-sky-700: #154784;
+        --color-cloudy-sky-800: #0e2f58;
+        --color-cloudy-sky-900: #07182c;
+        --color-cloudy-sky-950: #05111f;
+
+        --color-dark-coffee-50: #f7f3ed;
+        --color-dark-coffee-100: #f0e8db;
+        --color-dark-coffee-200: #e1d0b7;
+        --color-dark-coffee-300: #d2b993;
+        --color-dark-coffee-400: #c3a16f;
+        --color-dark-coffee-500: #b48a4b;
+        --color-dark-coffee-600: #906e3c;
+        --color-dark-coffee-700: #6c532d;
+        --color-dark-coffee-800: #48371e;
+        --color-dark-coffee-900: #241c0f;
+        --color-dark-coffee-950: #19130b;
+
+        --color-baltic-blue-50: #edf3f7;
+        --color-baltic-blue-100: #dce7ef;
+        --color-baltic-blue-200: #b9cfdf;
+        --color-baltic-blue-300: #95b7d0;
+        --color-baltic-blue-400: #729fc0;
+        --color-baltic-blue-500: #4f88b0;
+        --color-baltic-blue-600: #3f6c8d;
+        --color-baltic-blue-700: #2f516a;
+        --color-baltic-blue-800: #203646;
+        --color-baltic-blue-900: #101b23;
+        --color-baltic-blue-950: #0b1319;
+
+        --color-radioactive-grass-50: #edfbe9;
+        --color-radioactive-grass-100: #dbf7d4;
+        --color-radioactive-grass-200: #b8f0a8;
+        --color-radioactive-grass-300: #94e87d;
+        --color-radioactive-grass-400: #71e052;
+        --color-radioactive-grass-500: #4dd926;
+        --color-radioactive-grass-600: #3ead1f;
+        --color-radioactive-grass-700: #2e8217;
+        --color-radioactive-grass-800: #1f570f;
+        --color-radioactive-grass-900: #0f2b08;
+        --color-radioactive-grass-950: #0b1e05;
+      }
+    </style>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-dm-sans: "DM Sans", sans-serif;
+        --font-jersey: "Jersey 20", cursive;
+        --font-pixel: "Pixelify Sans", sans-serif;
+      }
+    </style>
+
+    <style>
+      * {
+        padding: 0;
+      }
+    </style>
+
     <title>EcoRunner</title>
 
     <meta
@@ -18,131 +97,34 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jersey+20&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
 
-  <body class="dark-mode">
-    <!-- HEADER -->
-    <header>
-      <nav class="container">
-        <img src="logo.png" alt="Logo do EcoRunner" />
-
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#blog">Blog</a></li>
+  <body class="bg-gold-500">
+    <header
+      class="py-2 px-4 items-center text-gold-500 flex fixed w-full justify-between bg-dark-coffee-900"
+    >
+      <h1 class="ml-8 font-jersey text-3xl">EcoRunner</h1>
+      <nav class="flex gap-8 items-center h-20">
+        <ul class="font-bold flex gap-2">
+          <li class=""><a href="/">Início</a></li>
+          <li><a href="/">Sobre</a></li>
+          <li><a href="/">Blog</a></li>
         </ul>
+        <a
+          class="bg-baltic-blue-500 font-bold h-full px-8 flex justify-center items-center hover:bg-baltic-blue-300"
+          href="/comunidade"
+          >Ver Comunidade</a
+        >
       </nav>
     </header>
-
-    <!-- HERO -->
-    <section id="hero" class="hero">
-      <div class="container">
-        <!-- <h1>EcoRunner</h1>
-        <p>Você é rápido o suficiente para salvar o mundo?</p> -->
-      </div>
-    </section>
-
-    <!-- CALL TO ACTION -->
-    <div class="cta-section">
-      <div class="cta-panel container">
-        <p>Jogue agora e ajude o planeta!</p>
-
-        <div class="button-list">
-          <button class="download-button"><b>Jogar</b></button>
-          <button class="play-button"><b>Download</b></button>
-        </div>
-      </div>
-    </div>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container">
-        <h1>De Onde Veio o EcoRunner?</h1>
-
-        <article class="unifil">
-          <img src="images/unifil.png" alt="Logo da UniFil" />
-
-          <div>
-            <p>
-              EcoRunner é um projeto feito por alunos da
-              <b>UniFil - Universidade Filadélfia de Londrina</b> para o curso
-              de Ciência da Computação.
-            </p>
-
-            <p>
-              O objetivo do jogo é conscientizar sobre sustentabilidade
-              ambiental de forma divertida.
-            </p>
-          </div>
-        </article>
-
-        <article>
-          <div class="text-box">
-            <h1>Quem fez o projeto?</h1>
-
-            <p>
-              Todo o jogo foi criado pelos alunos, desde a Pixel Art até o
-              código. Todos colaboraram com a realização do projeto para
-              trazermos o EcoRunner à realidade.
-            </p>
-          </div>
-
-          <div class="author-panel">
-            <div class="author-card">
-              <img src="images/authors/author.png" alt="Foto de Witor Tenã" />
-              <div>
-                <h4>Witor Tenã</h4>
-                <p>Programador</p>
-              </div>
-            </div>
-
-            <div class="author-card">
-              <img
-                src="images/authors/author.png"
-                alt="Foto de Rafael Utiyama"
-              />
-              <div>
-                <h4>Rafael Utiyama</h4>
-                <p>Programador</p>
-              </div>
-            </div>
-
-            <div class="author-card">
-              <img src="images/authors/author.png" alt="Foto de Marcos Yudi" />
-              <div>
-                <h4>Marcos Yudi</h4>
-                <p>Programador</p>
-              </div>
-            </div>
-
-            <div class="author-card">
-              <img
-                src="images/authors/author.png"
-                alt="Foto de Thiago Antoniassi"
-              />
-              <div>
-                <h4>Thiago Antoniassi</h4>
-                <p>Programador</p>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#blog">Blog</a></li>
-        </ul>
-        <br />
-        <p>EcoRunner</p>
-      </div>
-    </footer>
   </body>
 </html>
