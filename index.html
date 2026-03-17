@@ -68,17 +68,12 @@
         --color-radioactive-grass-950: #0b1e05;
       }
     </style>
+
     <style type="text/tailwindcss">
       @theme {
         --font-dm-sans: "DM Sans", sans-serif;
         --font-jersey: "Jersey 20", cursive;
         --font-pixel: "Pixelify Sans", sans-serif;
-      }
-    </style>
-
-    <style>
-      * {
-        padding: 0;
       }
     </style>
 
@@ -97,34 +92,232 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jersey+20&family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
 
-  <body class="bg-gold-500">
+  <body class="bg-gold-500 m-0">
     <header
-      class="py-2 px-4 items-center text-gold-500 flex fixed w-full justify-between bg-dark-coffee-900"
+      class="items-center shadow-xl shadow-black/20 border-b-gold-500/20 text-gold-500 flex fixed w-full justify-between bg-dark-coffee-900 z-50"
     >
-      <h1 class="ml-8 font-jersey text-3xl">EcoRunner</h1>
-      <nav class="flex gap-8 items-center h-20">
-        <ul class="font-bold flex gap-2">
-          <li class=""><a href="/">Início</a></li>
-          <li><a href="/">Sobre</a></li>
-          <li><a href="/">Blog</a></li>
-        </ul>
-        <a
-          class="bg-baltic-blue-500 font-bold h-full px-8 flex justify-center items-center hover:bg-baltic-blue-300"
-          href="/comunidade"
-          >Ver Comunidade</a
+      <img class="w-40" src="images/LogoImage.png" alt="Logo EcoRunner" />
+
+      <nav class="flex gap-8 items-center h-20 relative">
+        <!-- Mobile button -->
+        <button
+          id="menu-btn"
+          class="sm:hidden flex items-center px-4 h-full text-2xl"
+          aria-label="Open menu"
         >
+          ☰
+        </button>
+
+        <!-- Menu -->
+        <ul
+          id="menu"
+          class="font-bold gap-4 hidden text-center sm:text-left sm:flex flex-col sm:flex-row fixed sm:static top-20 left-0 w-full sm:w-auto bg-dark-coffee-900 sm:bg-transparent p-4 sm:p-0"
+        >
+          <li class="sm:mb-0"><a href="/#hero">Início</a></li>
+          <li class="sm:mb-0"><a href="/#about">Sobre</a></li>
+          <li class="sm:mb-0"><a href="/#blog">Blog</a></li>
+          <li
+            class="sm:mb-0 bg-baltic-blue-500 hover:bg-baltic-blue-300 text-dark-coffee-900 p-2 sm:hidden"
+          >
+            <a href="/comunidade">Ver comunidade</a>
+          </li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <a
+          class="bg-baltic-blue-500 hidden sm:flex text-dark-coffee-900 font-bold h-full px-8 items-center hover:bg-baltic-blue-300"
+          href="/comunidade"
+        >
+          Ver Comunidade
+        </a>
       </nav>
     </header>
+
+    <section
+      id="hero"
+      class="bg-[url('/images/images.png')] bg-cover bg-center bg-no-repeat h-screen"
+    ></section>
+
+    <section
+      class="bg-slate-900 flex flex-col items-center gap-8 px-4 pb-2 pt-12 sm:pt-20"
+    >
+      <div
+        class="flex justify-center items-center sm:flex-row flex-col gap-4 w-full"
+      >
+        <a
+          href="/play"
+          class="bg-radioactive-grass-500 hover:bg-radioactive-grass-300 px-8 py-4 rounded-lg text-dark-coffee-900 font-bold min-w-40 text-center"
+        >
+          Play
+        </a>
+
+        <a
+          href="/downloads"
+          class="bg-baltic-blue-500 hover:bg-baltic-blue-300 px-8 py-4 rounded-lg text-dark-coffee-900 font-bold min-w-40 text-center"
+        >
+          Download
+        </a>
+      </div>
+
+      <div class="w-full max-w-3xl mt-4 sm:mt-12 aspect-video">
+        <iframe
+          class="w-full h-full rounded-xl"
+          src="https://www.youtube.com/embed/UOCafXbx6ls"
+          title="YouTube video player"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="sm:pt-20 bg-slate-900">
+      <div
+        class="max-w-screen-xl mx-auto flex flex-col lg:flex-row justify-start items-start gap-16 px-4 py-20"
+      >
+        <article class="flex text-gold-500 flex-col">
+          <!-- titie -->
+          <h1
+            class="text-3xl font-bold mb-8 bg-gold-500 p-2 w-fit text-dark-coffee-900"
+          >
+            Sobre EcoRunner
+          </h1>
+          <!-- Text -->
+          <p class="mb-8 max-w-220">
+            O EcoRunner surgiu como um projeto para as aulas de PI - Projeto
+            Interdisciplinar do curso de
+            <span><b>Ciência da Computação</b></span
+            >. É um jogo divertido e interativo onde o jogador tem o objetivo de
+            salvar o mundo por meio de práticas de sustentabilidade ambiental.
+          </p>
+          <!-- People cards -->
+          <div class="flex items-center gap-8">
+            <!-- <div class="flex items-center flex-col max-w-25 gap-4">
+              <h1 class="text-2xl font-bold">ONU</h1>
+            </div> -->
+            <!-- <div class="flex justify-center items-center gap-4">
+              <img
+                class="rounded-full"
+                src="/images/icons.png"
+                alt="Foto Ícones ONU"
+              />
+            </div> -->
+          </div>
+        </article>
+        <article class="flex text-gold-500 flex-col">
+          <!-- titie -->
+          <h1
+            class="text-3xl font-bold mb-8 bg-gold-500 p-2 w-fit text-dark-coffee-900"
+          >
+            Quem Somos
+          </h1>
+          <!-- Text -->
+          <p class="mb-8 max-w-220">
+            Somos alunos da <span><b>UniFil</b></span
+            >, juntos desenvolvemos o EcoRunner, com o objetivo de
+            conscientização à necessidade de sustentabilidade ambiental de forma
+            divertida.
+          </p>
+          <!-- People cards -->
+          <div
+            class="flex flex-wrap justify-center sm:justify-start items-center gap-8"
+          >
+            <div class="flex items-center flex-col max-w-30 text-center gap-4">
+              <img
+                class="rounded-full"
+                width="150px"
+                src="/images/authors/author.png"
+                alt="Foto do Participante"
+              />
+              <p class="font-bold h-10">Witor Tenã</p>
+              <p>Participante</p>
+            </div>
+            <div class="flex items-center flex-col max-w-30 text-center gap-4">
+              <img
+                class="rounded-full"
+                width="150px"
+                src="/images/authors/author.png"
+                alt="Foto do Participante"
+              />
+              <p class="font-bold h-10">Rafael Utiyama</p>
+              <p>Participante</p>
+            </div>
+            <div class="flex items-center flex-col max-w-30 text-center gap-4">
+              <img
+                class="rounded-full"
+                width="150px"
+                src="/images/authors/author.png"
+                alt="Foto do Participante"
+              />
+              <p class="font-bold h-10">Thiago Antoniassi</p>
+              <p>Participante</p>
+            </div>
+            <div class="flex items-center flex-col max-w-30 text-center gap-4">
+              <img
+                class="rounded-full"
+                width="150px"
+                src="/images/authors/author.png"
+                alt="Foto do Participante"
+              />
+              <p class="font-bold h-10">Marcos Yudi</p>
+              <p>Participante</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer
+      class="border-t-5 px-4 text-center sm:text-left border-t-gold-500/20 bg-dark-coffee-900 py-20 text-gold-500"
+    >
+      <div class="max-w-screen-xl mx-auto">
+        <h2 class="text-xl font-bold mb-8">NAVEGAÇÃO</h2>
+        <ul class="flex flex-col gap-4">
+          <li><a href="/#">Início</a></li>
+          <li><a href="/#">Sobre</a></li>
+          <li><a href="/#">Blog</a></li>
+        </ul>
+
+        <hr class="mt-20 text-gold-500/20 border-t-gold-500/20 border-t-5" />
+        <div class="flex gap-8 items-center">
+          <div class="w-20 mt-20">
+            <img src="images/unifil_logo.png" alt="Game Logo" />
+          </div>
+          <div class="w-50 mt-20">
+            <img src="images/LogoImage.png" alt="Game Logo" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    const links = document.querySelectorAll("#menu li");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+
+      links.forEach((link) => {
+        link.classList.toggle("mb-8");
+      });
+    });
+
+    links.forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.classList.add("hidden");
+
+        // optional: reset spacing
+        links.forEach((l) => l.classList.remove("mb-8"));
+      });
+    });
+  </script>
 </html>
