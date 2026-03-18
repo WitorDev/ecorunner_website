@@ -105,7 +105,11 @@
     <header
       class="items-center shadow-xl shadow-black/20 border-b-gold-500/20 text-gold-500 flex fixed w-full justify-between bg-dark-coffee-900 z-50"
     >
-      <img class="w-40" src="images/LogoImage.png" alt="Logo EcoRunner" />
+      <img
+        class="w-40"
+        src="https://witordev.github.io/ecorunner_website/images/LogoImage.png"
+        alt="Logo EcoRunner"
+      />
 
       <nav class="flex gap-8 items-center h-20 relative">
         <!-- Mobile button -->
@@ -120,11 +124,11 @@
         <!-- Menu -->
         <ul
           id="menu"
-          class="font-bold gap-4 hidden text-center sm:text-left sm:flex flex-col sm:flex-row fixed sm:static top-20 left-0 w-full sm:w-auto bg-dark-coffee-900 sm:bg-transparent p-4 sm:p-0"
+          class="font-bold gap-4 hidden text-center text-left sm:flex flex-col sm:flex-row fixed sm:static top-20 left-0 w-full sm:w-auto bg-dark-coffee-900 sm:bg-transparent p-4 sm:p-0"
         >
           <li class="sm:mb-0"><a href="/#hero">Início</a></li>
           <li class="sm:mb-0"><a href="/#about">Sobre</a></li>
-          <li class="sm:mb-0"><a href="/#blog">Blog</a></li>
+          <li class="sm:mb-0"><a href="/#unifil">UniFil</a></li>
           <li
             class="sm:mb-0 bg-baltic-blue-500 hover:bg-baltic-blue-300 text-dark-coffee-900 p-2 sm:hidden"
           >
@@ -144,7 +148,7 @@
 
     <section
       id="hero"
-      class="bg-[url('/images/images.png')] bg-cover bg-center bg-no-repeat h-screen"
+      class="bg-[url('/images.png')] bg-cover bg-center bg-no-repeat h-screen"
     ></section>
 
     <section
@@ -179,120 +183,169 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="sm:pt-20 bg-slate-900">
-      <div
-        class="max-w-screen-xl mx-auto flex flex-col lg:flex-row justify-start items-start gap-16 px-4 py-20"
-      >
-        <article class="flex text-gold-500 flex-col">
-          <!-- titie -->
-          <h1
-            class="text-3xl font-bold mb-8 bg-gold-500 p-2 w-fit text-dark-coffee-900"
-          >
-            Sobre EcoRunner
-          </h1>
-          <!-- Text -->
-          <p class="mb-8 max-w-220">
-            O EcoRunner surgiu como um projeto para as aulas de PI - Projeto
-            Interdisciplinar do curso de
-            <span><b>Ciência da Computação</b></span
-            >. É um jogo divertido e interativo onde o jogador tem o objetivo de
-            salvar o mundo por meio de práticas de sustentabilidade ambiental.
-          </p>
-          <!-- People cards -->
-          <div class="flex items-center gap-8">
-            <!-- <div class="flex items-center flex-col max-w-25 gap-4">
-              <h1 class="text-2xl font-bold">ONU</h1>
-            </div> -->
-            <!-- <div class="flex justify-center items-center gap-4">
-              <img
-                class="rounded-full"
-                src="/images/icons.png"
-                alt="Foto Ícones ONU"
-              />
-            </div> -->
-          </div>
-        </article>
-        <article class="flex text-gold-500 flex-col">
-          <!-- titie -->
-          <h1
-            class="text-3xl font-bold mb-8 bg-gold-500 p-2 w-fit text-dark-coffee-900"
-          >
-            Quem Somos
-          </h1>
-          <!-- Text -->
-          <p class="mb-8 max-w-220">
-            Somos alunos da <span><b>UniFil</b></span
-            >, juntos desenvolvemos o EcoRunner, com o objetivo de
-            conscientização à necessidade de sustentabilidade ambiental de forma
-            divertida.
-          </p>
-          <!-- People cards -->
+    <section id="about" class="bg-slate-900 py-12 pt-20">
+      <div class="max-w-screen-xl mx-auto px-4 text-gold-500">
+        <!-- Title -->
+        <h1
+          class="text-2xl text-3xl font-bold bg-gold-500 text-dark-coffee-900 p-2 w-fit mb-8"
+        >
+          Quem Somos
+        </h1>
+
+        <!-- Content -->
+        <div class="flex flex-col lg:flex-row gap-12">
+          <!-- EcoRunner -->
+          <article class="flex-1">
+            <h2 class="text-xl text-2xl font-bold mb-4">Sobre EcoRunner</h2>
+            <p class="text-sm text-base leading-relaxed">
+              O EcoRunner surgiu como um projeto para as aulas de PI - Projeto
+              Interdisciplinar do curso de <b>Ciência da Computação</b>. É um
+              jogo interativo onde o jogador tem o objetivo de salvar o mundo
+              por meio de práticas de sustentabilidade ambiental.
+            </p>
+          </article>
+
+          <!-- Nós -->
+          <article class="flex-1">
+            <h2 class="text-xl text-2xl font-bold mb-4">Sobre Nós</h2>
+            <p class="text-sm text-base leading-relaxed">
+              Somos alunos da <b>UniFil</b> e desenvolvemos o EcoRunner com foco
+              em conscientização ambiental de forma divertida e acessível.
+            </p>
+          </article>
+        </div>
+
+        <!-- GRID -->
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card -->
           <div
-            class="flex flex-wrap justify-center sm:justify-start items-center gap-8"
+            class="bg-baltic-blue-300/20 border border-gold-500/20 hover:border-gold-500/50 hover:scale-105 transition-all duration-300 p-6 rounded-xl text-center"
           >
-            <div class="flex items-center flex-col max-w-30 text-center gap-4">
+            <a target="_blank" href="https://github.com/witordev">
               <img
-                class="rounded-full"
-                width="150px"
-                src="/images/authors/author.png"
-                alt="Foto do Participante"
+                class="rounded-full mx-auto w-28 sm:w-32"
+                src="https://witordev.github.io/ecorunner_website/images/authors/author.png"
               />
-              <p class="font-bold h-10">Witor Tenã</p>
-              <p>Participante</p>
-            </div>
-            <div class="flex items-center flex-col max-w-30 text-center gap-4">
-              <img
-                class="rounded-full"
-                width="150px"
-                src="/images/authors/author.png"
-                alt="Foto do Participante"
-              />
-              <p class="font-bold h-10">Rafael Utiyama</p>
-              <p>Participante</p>
-            </div>
-            <div class="flex items-center flex-col max-w-30 text-center gap-4">
-              <img
-                class="rounded-full"
-                width="150px"
-                src="/images/authors/author.png"
-                alt="Foto do Participante"
-              />
-              <p class="font-bold h-10">Thiago Antoniassi</p>
-              <p>Participante</p>
-            </div>
-            <div class="flex items-center flex-col max-w-30 text-center gap-4">
-              <img
-                class="rounded-full"
-                width="150px"
-                src="/images/authors/author.png"
-                alt="Foto do Participante"
-              />
-              <p class="font-bold h-10">Marcos Yudi</p>
-              <p>Participante</p>
-            </div>
+              <p class="font-bold mt-4">Witor Tenã</p>
+              <p class="text-sm text-base">Programação</p>
+            </a>
           </div>
+
+          <div
+            class="bg-baltic-blue-300/20 border border-gold-500/20 hover:border-gold-500/50 hover:scale-105 transition-all duration-300 p-6 rounded-xl text-center"
+          >
+            <a target="_blank" href="https://github.com/utiyamaRafael">
+              <img
+                class="rounded-full mx-auto w-28 sm:w-32"
+                src="https://witordev.github.io/ecorunner_website/images/authors/author.png"
+              />
+              <p class="font-bold mt-4">Rafael Utiyama</p>
+              <p class="text-sm text-base">Idealização</p>
+            </a>
+          </div>
+
+          <div
+            class="bg-baltic-blue-300/20 border border-gold-500/20 hover:border-gold-500/50 hover:scale-105 transition-all duration-300 p-6 rounded-xl text-center"
+          >
+            <a target="_blank" href="https://github.com/Thiag0123">
+              <img
+                class="rounded-full mx-auto w-28 sm:w-32"
+                src="https://witordev.github.io/ecorunner_website/images/authors/author.png"
+              />
+              <p class="font-bold mt-4">Thiago Antoniassi</p>
+              <p class="text-sm text-base">Pesquisa</p>
+            </a>
+          </div>
+
+          <div
+            class="bg-baltic-blue-300/20 border border-gold-500/20 hover:border-gold-500/50 hover:scale-105 transition-all duration-300 p-6 rounded-xl text-center"
+          >
+            <a target="_blank" href="https://github.com/marcos-yudi">
+              <img
+                class="rounded-full mx-auto w-28 sm:w-32"
+                src="https://witordev.github.io/ecorunner_website/images/authors/author.png"
+              />
+              <p class="font-bold mt-4">Marcos Yudi</p>
+              <p class="text-sm text-base">Documentação</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="unifil" class="sm:pt-20 bg-slate-900 py-20">
+      <div
+        class="mx-auto max-w-screen-xl text-gold-500 px-4 flex flex-col sm:flex-row gap-4"
+      >
+        <h1 class="text-3xl font-bold mb-4">UniFil</h1>
+      </div>
+      <div
+        class="mx-auto max-w-screen-xl text-gold-500 px-4 flex flex-col sm:flex-row gap-4"
+      >
+        <div class="max-w-18">
+          <img
+            src="https://witordev.github.io/ecorunner_website/images/unifil.png"
+            alt="Logo UniFil"
+          />
+        </div>
+        <article class="">
+          <p class="text-">
+            Esse projeto foi feito na unidade curricular de Projeto
+            Interdisciplinar do curso de Ciência da Computação da
+            <span class="font-bold">UniFil</span>, consistindo no
+            desenvolvimento de um jogo digital, onde foram aplicados conceitos
+            de lógica de programação, estruturas de dados e design de
+            interfaces, com foco na experiência do usuário e na interatividade.
+          </p>
         </article>
       </div>
     </section>
 
     <footer
-      class="border-t-5 px-4 text-center sm:text-left border-t-gold-500/20 bg-dark-coffee-900 py-20 text-gold-500"
+      class="border-t-5 px-4 text-center text-left border-t-gold-500/20 bg-dark-coffee-900 py-20 text-gold-500"
     >
       <div class="max-w-screen-xl mx-auto">
-        <h2 class="text-xl font-bold mb-8">NAVEGAÇÃO</h2>
-        <ul class="flex flex-col gap-4">
-          <li><a href="/#">Início</a></li>
-          <li><a href="/#">Sobre</a></li>
-          <li><a href="/#">Blog</a></li>
-        </ul>
+        <nav class="flex sm:flex-row flex-col gap-8 sm:gap-0 justify-between">
+          <div class="">
+            <h2 class="text-xl font-bold mb-8">NAVEGAÇÃO</h2>
+            <ul class="flex flex-col gap-4">
+              <li><a href="/#">Início</a></li>
+              <li><a href="/#about">Sobre</a></li>
+              <li><a href="/#unifil">UniFil</a></li>
+            </ul>
+          </div>
+          <div
+            class="flex p-4 rounded-lg h-fit w-fit sm:mx-0 mx-auto border-gold-500/20 border-4 bg-dark-coffee-800/50 justify-center items-center flex-col gap-4"
+          >
+            <a
+              href="/play"
+              class="bg-radioactive-grass-500 hover:bg-radioactive-grass-300 px-4 py-2 rounded-lg text-dark-coffee-900 font-bold min-w-40 text-center"
+            >
+              Play
+            </a>
+
+            <a
+              href="/downloads"
+              class="bg-baltic-blue-500 hover:bg-baltic-blue-300 px-4 py-2 rounded-lg text-dark-coffee-900 font-bold min-w-40 text-center"
+            >
+              Download
+            </a>
+          </div>
+        </nav>
 
         <hr class="mt-20 text-gold-500/20 border-t-gold-500/20 border-t-5" />
         <div class="flex gap-8 items-center">
           <div class="w-20 mt-20">
-            <img src="images/unifil_logo.png" alt="Game Logo" />
+            <img
+              src="https://witordev.github.io/ecorunner_website/images/unifil_logo.png"
+              alt="Game Logo"
+            />
           </div>
           <div class="w-50 mt-20">
-            <img src="images/LogoImage.png" alt="Game Logo" />
+            <img
+              src="https://witordev.github.io/ecorunner_website/images/LogoImage.png"
+              alt="Game Logo"
+            />
           </div>
         </div>
       </div>
