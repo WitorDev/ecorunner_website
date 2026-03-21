@@ -153,7 +153,7 @@
 
     <aside
       id="sidebar"
-      class="bg-gold-500 text-white flex flex-col w-62 h-full fixed z-50 -translate-x-full sm:translate-x-0 transition-transform duration-300"
+      class="bg-gold-500 text-white flex flex-col w-62 h-screen fixed z-50 -translate-x-full sm:translate-x-0 transition-transform duration-300"
     >
       <header class="p-12">
         <img src="images/graphics/guy.svg" />
@@ -161,11 +161,8 @@
 
       <nav class="flex-1">
         <ul class="font-bold">
-          <li class="hover:bg-gold-700 bg-gold-200">
-            <a
-              href="/"
-              class="flex items-center text-baltic-blue-500 gap-4 py-2 px-8"
-            >
+          <li class="hover:bg-gold-700">
+            <a href="/" class="flex items-center gap-4 py-2 px-8">
               <i class="fa-solid fa-house w-4"></i>
               Início
             </a>
@@ -188,7 +185,7 @@
       </nav>
 
       <a
-        href="/community.html"
+        href="/comunidade.html"
         class="bg-baltic-blue-500 m-8 border-b-4 border-b-baltic-blue-700 hover:bg-baltic-blue-700 rounded-lg font-bold text-center py-2 px-4 flex items-center justify-center gap-2"
       >
         <i class="fa-solid fa-people-group"></i>
@@ -199,83 +196,116 @@
     <header
       class="px-4 sm:px-16 sticky bg-white 00 w-full top-14 sm:top-0 py-2 border-b border-b-gray-200"
     >
-      <h1 class="text-3xl font-bold sm:ml-62">Início</h1>
+      <h1 class="text-3xl font-bold sm:ml-62">Quem Somos</h1>
     </header>
     <main
       class="pt-22 transition-all pb-8 px-4 sm:px-16 sm:pt-8 sm:ml-62 max-w-screen-xl text-gray-700"
     >
       <article>
-        <div class="w-full aspect-video mb-8">
-          <iframe
-            class="w-full h-full rounded-xl"
-            src="videos/video.webm"
-            title="EcoRunner Gameplay Demo"
-            allowfullscreen
-            autoplay
-            muted
-            loop
-          ></iframe>
-        </div>
         <span class="text-2xl mb-2 font-bold flex gap-2">
           <div class="flex justify-center items-center">
-            <i class="fa-solid fa-search text-xl"></i>
+            <i class="fa-solid fa-people-group text-xl"></i>
           </div>
-          <h2 class="">Sobre o Jogo</h2>
+          <h2 class="">Comunidade</h2>
         </span>
-        <p>
-          O EcoRunner surgiu como um projeto interdisciplinar do curso de
-          Ciência da Computação da UniFil. O jogo desafia o jogador a salvar o
-          mundo por meio de práticas sustentáveis e consciência ambiental.
+        <p class="mb-4">
+          O público-alvo do EcoRunner é composto principalmente por estudantes,
+          jovens e pessoas interessadas em tecnologia e sustentabilidade. O
+          projeto também beneficia educadores que buscam formas interativas de
+          abordar temas ambientais em sala de aula, além da comunidade em geral
+          que deseja aprender sobre práticas sustentáveis de forma acessível.
         </p>
-        <section
-          class="mt-4 mb-4 flex flex-col lg:flex-row items-center justify-between"
-        >
-          <span class="w-full flex py-2 gap-2 items-center">
-            <i class="fa-solid fa-circle-info"></i>
-            <i
-              ><a
-                class="text-baltic-blue-500 hover:text-baltic-blue-700"
-                href="/game.html"
-                target="_self"
-                >Saber mais</a
-              ></i
-            ></span
-          >
-          <div
-            class="w-full lg:justify-end flex gap-2 justify-start items-center"
-          >
-            <button
-              class="border-b-4 border-b-radioactive-grass-700 cursor-pointer bg-radioactive-grass-500 font-bold text-white hover:bg-radioactive-grass-700 rounded-lg px-4 py-2"
-            >
-              Jogar no Navegador
-            </button>
-            <button
-              class="border-b-4 border-b-baltic-blue-700 cursor-pointer bg-baltic-blue-500 font-bold text-white hover:bg-baltic-blue-700 rounded-lg px-4 py-2"
-            >
-              Baixar
-            </button>
+        <p class="mb-12">
+          O EcoRunner contribui para essa comunidade ao promover conscientização
+          ambiental por meio de um jogo interativo, tornando o aprendizado mais
+          envolvente e prático. Através das mecânicas do jogo, os jogadores são
+          incentivados a refletir sobre suas ações no dia a dia, como consumo
+          consciente, redução de poluição e preservação dos recursos naturais.
+          Dessa forma, o projeto estimula mudanças de comportamento e fortalece
+          a educação ambiental de maneira divertida e acessível.
+        </p>
+        <span class="text-2xl mb-2 font-bold flex gap-2">
+          <div class="flex justify-center items-center">
+            <i class="fa-solid fa-directions text-xl"></i>
           </div>
-        </section>
-        <section class="mt-8 border-t border-t-gray-200 pt-4">
-          <h2 class="text-2xl mb-4 font-bold">Informações</h2>
-          <div class="flex flex-wrap gap-4 flex-col p-4 bg-gray-100 rounded-lg">
-            <span
-              ><b>Gênero: </b>
-              <p>Educativo, Aventura, 2D Platformer</p></span
-            >
-            <span
-              ><b>Plataforma:</b>
-              <p>PC, Navegador</p></span
-            >
-            <span
-              ><b>Desenvolvedor(es): </b>
-              <p>Alunos UniFil Ciência da Computação Turma A, E1</p></span
-            >
-            <span
-              ><b>Lançamento:</b>
-              <p>2026</p></span
-            >
-          </div>
+          <h2 class="">Explicação do Tema</h2>
+        </span>
+        <p class="mb-4">
+          O projeto EcoRunner aborda o problema da falta de conscientização
+          sobre as mudanças climáticas e seus impactos no dia a dia. Muitas
+          pessoas ainda não compreendem como pequenas ações individuais
+          contribuem diretamente para problemas ambientais globais, como o
+          aumento das emissões de carbono e a degradação dos recursos naturais.
+          A escolha do tema foi baseada na relevância do ODS 13 (Ação contra a
+          mudança global do clima), um dos principais objetivos da ONU para o
+          desenvolvimento sustentável.
+        </p>
+        <p class="mb-4">
+          Esse tema é essencial por impactar não apenas o meio ambiente, mas
+          também a qualidade de vida da sociedade como um todo. O projeto busca
+          transformar esse conteúdo em algo acessível e interativo, utilizando
+          um jogo como ferramenta de aprendizado. A extensão curricular é uma
+          atividade acadêmica que conecta o conhecimento teórico aprendido em
+          sala de aula com sua aplicação prática na sociedade. No contexto deste
+          projeto, ela permite que os alunos desenvolvam habilidades técnicas,
+          como programação e design, ao mesmo tempo em que criam uma solução com
+          impacto social.
+        </p>
+        <p class="mb-12">
+          <b
+            >O EcoRunner exemplifica essa integração ao aplicar conceitos de
+            computação na construção de um produto que promove educação
+            ambiental e conscientização.</b
+          >
+        </p>
+        <div class="flex mb-12 w-full justify-center">
+          <img
+            class="max-w-100"
+            src="images/graphics/typing.svg"
+            alt="Ilustração de desenvolvimento de projeto"
+          />
+        </div>
+        <section class="bg-gray-200 p-4 rounded-lg">
+          <span class="text-2xl mb-2 font-bold flex gap-2">
+            <div class="flex justify-center items-center">
+              <i class="fa-solid fa-user-graduate text-xl"></i>
+            </div>
+            <h2 class="">Projeto de Extensão</h2>
+          </span>
+          <p class="mb-4">
+            A extensão curricular é um componente obrigatório do ensino superior
+            no Brasil que busca integrar a universidade com a sociedade. Por
+            meio dela, os estudantes aplicam, na prática, os conhecimentos
+            adquiridos em sala de aula, desenvolvendo projetos que geram impacto
+            social, cultural ou tecnológico.
+          </p>
+          <p class="mb-4">
+            No curso de Ciência da Computação, a extensão funciona como uma
+            carga horária específica que deve ser cumprida ao longo da
+            graduação. Essa carga é obtida através da participação em projetos,
+            como o desenvolvimento de sistemas, aplicações ou soluções
+            tecnológicas voltadas para necessidades reais da comunidade.
+          </p>
+          <p class="mb-4">
+            Esse modelo existe por exigência legal, que determina que uma parte
+            da formação acadêmica seja dedicada a atividades que ultrapassem o
+            ambiente teórico, promovendo uma troca entre universidade e
+            sociedade. Na prática, isso significa que os alunos não apenas
+            aprendem conceitos técnicos, mas também os utilizam para resolver
+            problemas concretos.
+          </p>
+          <p class="mb-4">
+            O projeto desenvolvido se encaixa diretamente nesse contexto, pois
+            aplica conhecimentos de programação, desenvolvimento web e
+            organização de sistemas para criar uma solução funcional. Além de
+            reforçar habilidades técnicas, como lógica e desenvolvimento de
+            software, o projeto também contribui para competências importantes
+            como trabalho em equipe, comunicação e entendimento de requisitos
+            reais. Dessa forma, a extensão curricular não apenas complementa a
+            formação acadêmica, mas também prepara o estudante para o mercado,
+            aproximando-o de situações práticas e demandas reais, ao mesmo tempo
+            em que gera benefícios para a sociedade.
+          </p>
         </section>
       </article>
     </main>

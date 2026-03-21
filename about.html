@@ -153,7 +153,7 @@
 
     <aside
       id="sidebar"
-      class="bg-gold-500 text-white flex flex-col w-62 h-full fixed z-50 -translate-x-full sm:translate-x-0 transition-transform duration-300"
+      class="bg-gold-500 text-white flex flex-col w-62 h-screen fixed z-50 -translate-x-full sm:translate-x-0 transition-transform duration-300"
     >
       <header class="p-12">
         <img src="images/graphics/guy.svg" />
@@ -161,11 +161,8 @@
 
       <nav class="flex-1">
         <ul class="font-bold">
-          <li class="hover:bg-gold-700 bg-gold-200">
-            <a
-              href="/"
-              class="flex items-center text-baltic-blue-500 gap-4 py-2 px-8"
-            >
+          <li class="hover:bg-gold-700">
+            <a href="/" class="flex items-center gap-4 py-2 px-8">
               <i class="fa-solid fa-house w-4"></i>
               Início
             </a>
@@ -178,8 +175,11 @@
             </a>
           </li>
 
-          <li class="hover:bg-gold-700">
-            <a href="/about.html" class="flex items-center gap-4 py-2 px-8">
+          <li class="hover:bg-gold-700 bg-gold-200">
+            <a
+              href="/about.html"
+              class="flex items-center text-baltic-blue-500 gap-4 py-2 px-8"
+            >
               <i class="fa-solid fa-file-lines w-4"></i>
               Quem Somos
             </a>
@@ -199,84 +199,104 @@
     <header
       class="px-4 sm:px-16 sticky bg-white 00 w-full top-14 sm:top-0 py-2 border-b border-b-gray-200"
     >
-      <h1 class="text-3xl font-bold sm:ml-62">Início</h1>
+      <h1 class="text-3xl font-bold sm:ml-62">Quem Somos</h1>
     </header>
     <main
       class="pt-22 transition-all pb-8 px-4 sm:px-16 sm:pt-8 sm:ml-62 max-w-screen-xl text-gray-700"
     >
       <article>
-        <div class="w-full aspect-video mb-8">
-          <iframe
-            class="w-full h-full rounded-xl"
-            src="videos/video.webm"
-            title="EcoRunner Gameplay Demo"
-            allowfullscreen
-            autoplay
-            muted
-            loop
-          ></iframe>
-        </div>
         <span class="text-2xl mb-2 font-bold flex gap-2">
           <div class="flex justify-center items-center">
-            <i class="fa-solid fa-search text-xl"></i>
+            <i class="fa-solid fa-code text-xl"></i>
           </div>
-          <h2 class="">Sobre o Jogo</h2>
+          <h2 class="">Sobre os Desenvolvedores</h2>
         </span>
-        <p>
-          O EcoRunner surgiu como um projeto interdisciplinar do curso de
-          Ciência da Computação da UniFil. O jogo desafia o jogador a salvar o
-          mundo por meio de práticas sustentáveis e consciência ambiental.
+        <p class="mb-4">
+          O EcoRunner foi feito por alunos da Turma de Ciência da Computação da
+          UniFil de Londrina. O Projeto foi feito com a coordenação dos
+          professores João e Tania Camila, que nos guiaram e auxiliaram ao longo
+          do projeto.
         </p>
-        <section
-          class="mt-4 mb-4 flex flex-col lg:flex-row items-center justify-between"
-        >
-          <span class="w-full flex py-2 gap-2 items-center">
-            <i class="fa-solid fa-circle-info"></i>
-            <i
-              ><a
-                class="text-baltic-blue-500 hover:text-baltic-blue-700"
-                href="/game.html"
-                target="_self"
-                >Saber mais</a
-              ></i
-            ></span
-          >
-          <div
-            class="w-full lg:justify-end flex gap-2 justify-start items-center"
-          >
-            <button
-              class="border-b-4 border-b-radioactive-grass-700 cursor-pointer bg-radioactive-grass-500 font-bold text-white hover:bg-radioactive-grass-700 rounded-lg px-4 py-2"
-            >
-              Jogar no Navegador
-            </button>
-            <button
-              class="border-b-4 border-b-baltic-blue-700 cursor-pointer bg-baltic-blue-500 font-bold text-white hover:bg-baltic-blue-700 rounded-lg px-4 py-2"
-            >
-              Baixar
-            </button>
+        <p class="mb-4">
+          Cada integrante contribuiu de forma única para o desenvolvimento do
+          projeto, com o objetivo de entregar um produto final polido e de alta
+          qualidade.
+        </p>
+      </article>
+      <section>
+        <div class="flex flex-wrap gap-8">
+          <div class="max-w-30 md:max-w-46 flex flex-col">
+            <img
+              src="images/authors/author.png"
+              class="rounded-t-lg"
+              alt="Foto de Integrante"
+            />
+            <article class="p-4 bg-gray-200 rounded-b-lg">
+              <p class="font-bold">Witor Tenã</p>
+              <p class="text-sm font-bold">Ciência da Computação</p>
+              <p class="text-sm mt-2"><i>Tech Lead</i></p>
+            </article>
           </div>
-        </section>
-        <section class="mt-8 border-t border-t-gray-200 pt-4">
-          <h2 class="text-2xl mb-4 font-bold">Informações</h2>
-          <div class="flex flex-wrap gap-4 flex-col p-4 bg-gray-100 rounded-lg">
-            <span
-              ><b>Gênero: </b>
-              <p>Educativo, Aventura, 2D Platformer</p></span
-            >
-            <span
-              ><b>Plataforma:</b>
-              <p>PC, Navegador</p></span
-            >
-            <span
-              ><b>Desenvolvedor(es): </b>
-              <p>Alunos UniFil Ciência da Computação Turma A, E1</p></span
-            >
-            <span
-              ><b>Lançamento:</b>
-              <p>2026</p></span
-            >
+          <div class="max-w-30 md:max-w-46 flex flex-col">
+            <img
+              src="images/authors/author.png"
+              class="rounded-t-lg"
+              alt="Foto de Integrante"
+            />
+            <article class="p-4 bg-gray-200 rounded-b-lg">
+              <p class="font-bold">Marcos Yudi</p>
+              <p class="text-sm font-bold">Ciência da Computação</p>
+              <p class="text-sm mt-2"><i>Game Design</i></p>
+            </article>
           </div>
-        </section>
+          <div class="max-w-30 md:max-w-46 flex flex-col">
+            <img
+              src="images/authors/author.png"
+              class="rounded-t-lg"
+              alt="Foto de Integrante"
+            />
+            <article class="p-4 bg-gray-200 rounded-b-lg">
+              <p class="font-bold">Rafael Utiyama</p>
+              <p class="text-sm font-bold">Ciência da Computação</p>
+              <p class="text-sm mt-2"><i>Programação</i></p>
+            </article>
+          </div>
+          <div class="max-w-30 md:max-w-46 flex flex-col">
+            <img
+              src="images/authors/author.png"
+              class="rounded-t-lg"
+              alt="Foto de Integrante"
+            />
+            <article class="p-4 bg-gray-200 rounded-b-lg">
+              <p class="font-bold">Thiago Antoniassi</p>
+              <p class="text-sm font-bold">Ciência da Computação</p>
+              <p class="text-sm mt-2"><i>Marca e Branding</i></p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <article>
+        <span class="text-2xl mb-2 mt-12 font-bold flex gap-2">
+          <div class="flex justify-center items-center">
+            <i class="fa-solid fa-earth text-xl"></i>
+          </div>
+          <h2 class="">O Tema do Projeto</h2>
+        </span>
+        <p class="mb-4">
+          O Tema do projeto é o ODS 13, do objetivo 2030 da
+          <a href="https://brasil.un.org/pt-br" target="_blank"
+            ><i class="text-baltic-blue-500 hover:text-baltic-blue-700"
+              >ONU</i
+            ></a
+          >, que trata da ação contra a mudança global do clima. A proposta
+          busca conscientizar sobre os impactos ambientais causados pelas
+          atividades humanas, incentivando práticas sustentáveis no dia a dia.
+          Durante o desenvolvimento do projeto, foram abordados conceitos como
+          redução de emissões de carbono, consumo consciente, preservação dos
+          recursos naturais e a importância de atitudes individuais e coletivas
+          para a construção de um futuro mais sustentável.
+        </p>
+        <img src="images/ods-13.png" width="250px" alt="ODS-13 ONU" />
       </article>
     </main>
 
