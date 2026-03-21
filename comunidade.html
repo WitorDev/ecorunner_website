@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-gold-50: #fffae5;
+        --color-gold-100: #fff6cc;
+        --color-gold-200: #ffec99;
+        --color-gold-300: #ffe366;
+        --color-gold-400: #ffda33;
+        --color-gold-500: #ffd000;
+        --color-gold-600: #cca700;
+        --color-gold-700: #997d00;
+        --color-gold-800: #665300;
+        --color-gold-900: #332a00;
+        --color-gold-950: #241d00;
+
+        --color-cloudy-sky-50: #e9f1fc;
+        --color-cloudy-sky-100: #d3e4f8;
+        --color-cloudy-sky-200: #a7c8f1;
+        --color-cloudy-sky-300: #7badea;
+        --color-cloudy-sky-400: #4f92e3;
+        --color-cloudy-sky-500: #2276dd;
+        --color-cloudy-sky-600: #1c5fb0;
+        --color-cloudy-sky-700: #154784;
+        --color-cloudy-sky-800: #0e2f58;
+        --color-cloudy-sky-900: #07182c;
+        --color-cloudy-sky-950: #05111f;
+
+        --color-dark-coffee-50: #f7f3ed;
+        --color-dark-coffee-100: #f0e8db;
+        --color-dark-coffee-200: #e1d0b7;
+        --color-dark-coffee-300: #d2b993;
+        --color-dark-coffee-400: #c3a16f;
+        --color-dark-coffee-500: #b48a4b;
+        --color-dark-coffee-600: #906e3c;
+        --color-dark-coffee-700: #6c532d;
+        --color-dark-coffee-800: #48371e;
+        --color-dark-coffee-900: #241c0f;
+        --color-dark-coffee-950: #19130b;
+
+        --color-baltic-blue-50: #edf3f7;
+        --color-baltic-blue-100: #dce7ef;
+        --color-baltic-blue-200: #b9cfdf;
+        --color-baltic-blue-300: #95b7d0;
+        --color-baltic-blue-400: #729fc0;
+        --color-baltic-blue-500: #4f88b0;
+        --color-baltic-blue-600: #3f6c8d;
+        --color-baltic-blue-700: #2f516a;
+        --color-baltic-blue-800: #203646;
+        --color-baltic-blue-900: #101b23;
+        --color-baltic-blue-950: #0b1319;
+
+        --color-radioactive-grass-50: #edfbe9;
+        --color-radioactive-grass-100: #dbf7d4;
+        --color-radioactive-grass-200: #b8f0a8;
+        --color-radioactive-grass-300: #94e87d;
+        --color-radioactive-grass-400: #71e052;
+        --color-radioactive-grass-500: #4dd926;
+        --color-radioactive-grass-600: #3ead1f;
+        --color-radioactive-grass-700: #2e8217;
+        --color-radioactive-grass-800: #1f570f;
+        --color-radioactive-grass-900: #0f2b08;
+        --color-radioactive-grass-950: #0b1e05;
+      }
+    </style>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --font-dm-sans: "DM Sans", sans-serif;
+        --font-jersey: "Jersey 20", cursive;
+        --font-pixel: "Pixelify Sans", sans-serif;
+      }
+    </style>
+
+    <title>EcoRunner</title>
+
+    <meta
+      name="description"
+      content="EcoRunner é um jogo 2D gratuito desenvolvido na UniFil com foco em conscientização ambiental através da diversão."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jersey+20&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+  </head>
+
+  <body class="bg-gold-500 m-0 text-lg">
+    <header
+      class="items-center shadow-xl shadow-black/20 border-b-gold-500/20 text-gold-500 flex fixed w-full justify-between bg-dark-coffee-900 z-50"
+    >
+      <img
+        class="w-40"
+        src="https://witordev.github.io/ecorunner_website/images/LogoImage.png"
+        alt="Logo EcoRunner"
+      />
+
+      <nav class="flex gap-8 items-center h-20 relative">
+        <!-- Mobile button -->
+        <button
+          id="menu-btn"
+          class="sm:hidden flex items-center px-4 h-full text-2xl"
+          aria-label="Open menu"
+        >
+          ☰
+        </button>
+
+        <!-- Menu -->
+        <ul
+          id="menu"
+          class="font-bold gap-4 hidden text-center text-left sm:flex flex-col sm:flex-row fixed sm:static top-20 left-0 w-full sm:w-auto bg-dark-coffee-900 sm:bg-transparent p-4 sm:p-0"
+        >
+          <li class="sm:mb-0"><a href="/#hero">Início</a></li>
+          <li class="sm:mb-0"><a href="/#about">Sobre</a></li>
+          <li class="sm:mb-0"><a href="/#unifil">UniFil</a></li>
+          <li
+            class="sm:mb-0 bg-baltic-blue-500 hover:bg-baltic-blue-300 text-dark-coffee-900 p-2 sm:hidden"
+          >
+            <a href="/comunidade.html">Ver comunidade</a>
+          </li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <a
+          class="bg-baltic-blue-500 hidden sm:flex text-dark-coffee-900 font-bold h-full px-8 items-center hover:bg-baltic-blue-300"
+          href="/comunidade.html"
+        >
+          Ver Comunidade
+        </a>
+      </nav>
+    </header>
+
+    <section id="comunidade" class="bg-slate-900 py-20">
+      <div class="max-w-screen-xl pt-20 mx-auto px-4 text-gold-500">
+        <h1
+          class="text-3xl font-bold bg-gold-500 text-dark-coffee-900 px-4 py-2 w-fit mb-10"
+        >
+          Comunidade
+        </h1>
+
+        <p class="text-lg max-w-3xl leading-relaxed">
+          O público-alvo do EcoRunner é composto principalmente por estudantes,
+          jovens e pessoas interessadas em tecnologia e sustentabilidade. O
+          projeto também beneficia educadores que buscam formas interativas de
+          abordar temas ambientais em sala de aula, além da comunidade em geral
+          que deseja aprender sobre práticas sustentáveis de forma acessível.
+          <br /><br />
+          O EcoRunner contribui para essa comunidade ao promover conscientização
+          ambiental por meio de um jogo interativo, tornando o aprendizado mais
+          envolvente e prático. Através das mecânicas do jogo, os jogadores são
+          incentivados a refletir sobre suas ações no dia a dia, como consumo
+          consciente, redução de poluição e preservação dos recursos naturais.
+          Dessa forma, o projeto estimula mudanças de comportamento e fortalece
+          a educação ambiental de maneira divertida e acessível.
+        </p>
+      </div>
+    </section>
+
+    <section id="tema-explicacao" class="bg-slate-900 py-20">
+      <div class="max-w-screen-xl mx-auto px-4 text-gold-500">
+        <h1
+          class="text-3xl font-bold bg-gold-500 text-dark-coffee-900 px-4 py-2 w-fit mb-10"
+        >
+          Explicação do Tema
+        </h1>
+
+        <div class="max-w-3xl text-lg leading-relaxed">
+          <p>
+            O projeto EcoRunner aborda o problema da falta de conscientização
+            sobre as mudanças climáticas e seus impactos no dia a dia. Muitas
+            pessoas ainda não compreendem como pequenas ações individuais
+            contribuem diretamente para problemas ambientais globais, como o
+            aumento das emissões de carbono e a degradação dos recursos
+            naturais.
+          </p>
+
+          <br />
+
+          <p>
+            A escolha do tema foi baseada na relevância do ODS 13 (Ação contra a
+            mudança global do clima), um dos principais objetivos da ONU para o
+            desenvolvimento sustentável. Esse tema é essencial por impactar não
+            apenas o meio ambiente, mas também a qualidade de vida da sociedade
+            como um todo. O projeto busca transformar esse conteúdo em algo
+            acessível e interativo, utilizando um jogo como ferramenta de
+            aprendizado.
+          </p>
+
+          <br />
+
+          <p>
+            A extensão curricular é uma atividade acadêmica que conecta o
+            conhecimento teórico aprendido em sala de aula com sua aplicação
+            prática na sociedade. No contexto deste projeto, ela permite que os
+            alunos desenvolvam habilidades técnicas, como programação e design,
+            ao mesmo tempo em que criam uma solução com impacto social. O
+            EcoRunner exemplifica essa integração ao aplicar conceitos de
+            computação na construção de um produto que promove educação
+            ambiental e conscientização.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="border-t-5 px-4 text-center text-left border-t-gold-500/20 bg-dark-coffee-900 py-20 text-gold-500"
+    >
+      <div class="max-w-screen-xl mx-auto">
+        <nav class="flex sm:flex-row flex-col gap-8 sm:gap-0 justify-between">
+          <div class="">
+            <h2 class="text-xl text-center sm:text-left font-bold mb-8">
+              NAVEGAÇÃO
+            </h2>
+            <ul class="flex text-center sm:text-left flex-col gap-4">
+              <li><a href="/#">Início</a></li>
+              <li><a href="/#about">Sobre</a></li>
+              <li><a href="/#unifil">UniFil</a></li>
+            </ul>
+          </div>
+          <div
+            class="flex p-4 rounded-lg h-fit w-fit sm:mx-0 mx-auto border-gold-500/20 border-4 bg-dark-coffee-800/50 justify-center items-center flex-col gap-4"
+          >
+            <a
+              href="/play"
+              class="bg-radioactive-grass-500 hover:bg-radioactive-grass-300 px-4 py-2 rounded-lg text-dark-coffee-900 font-bold min-w-40 text-center"
+            >
+              Play
+            </a>
+
+            <a
+              href="/downloads"
+              class="bg-baltic-blue-500 hover:bg-baltic-blue-300 px-4 py-2 rounded-lg text-dark-coffee-900 font-bold min-w-40 text-center"
+            >
+              Download
+            </a>
+          </div>
+        </nav>
+
+        <hr class="mt-20 text-gold-500/20 border-t-gold-500/20 border-t-5" />
+        <div class="flex gap-8 items-center">
+          <div class="w-20 mt-20">
+            <img
+              src="https://witordev.github.io/ecorunner_website/images/unifil_logo.png"
+              alt="Game Logo"
+            />
+          </div>
+          <div class="w-50 mt-20">
+            <img
+              src="https://witordev.github.io/ecorunner_website/images/LogoImage.png"
+              alt="Game Logo"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    const links = document.querySelectorAll("#menu li");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+
+      links.forEach((link) => {
+        link.classList.toggle("mb-8");
+      });
+    });
+
+    links.forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.classList.add("hidden");
+
+        // optional: reset spacing
+        links.forEach((l) => l.classList.remove("mb-8"));
+      });
+    });
+  </script>
+</html>
