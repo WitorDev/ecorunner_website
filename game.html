@@ -140,7 +140,7 @@
     <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
   </head>
 
-  <body class="bg-white text-lg font-pt-sans">
+  <body class="bg-white text-lg font-pt-sans h-dvh flex overflow-hidden">
     <header
       class="bg-gold-500 text-white fixed top-0 left-0 w-full z-50 flex items-center justify-between px-4 py-3 sm:hidden"
     >
@@ -153,9 +153,9 @@
 
     <aside
       id="sidebar"
-      class="bg-gold-500 text-white flex flex-col w-full sm:w-62 h-full min-h-dvh fixed top-0 z-50 -translate-x-full sm:translate-x-0 transition-transform duration-300"
+      class="bg-gold-500 text-white sm:w-62 h-full w-full fixed sm:static top-14 sm:top-0 left-0 z-50 -translate-x-full sm:translate-x-0 transition-transform duration-300"
     >
-      <header class="p-12">
+      <header class="p-12 max-w-120">
         <img src="images/graphics/guy.svg" />
       </header>
 
@@ -195,180 +195,184 @@
         Comunidade
       </a>
     </aside>
-
-    <header
-      class="px-4 sm:px-16 sticky bg-white 00 w-full top-14 sm:top-0 py-2 border-b border-b-gray-200"
-    >
-      <h1 class="text-3xl font-bold sm:ml-62">EcoRunner</h1>
-    </header>
-    <main
-      class="pt-22 transition-all pb-8 px-4 sm:px-16 sm:pt-8 sm:ml-62 max-w-screen-xl text-gray-700"
-    >
-      <article>
-        <span class="text-2xl mb-2 font-bold flex gap-2">
-          <div class="flex justify-center items-center">
-            <i class="fa-solid fa-gamepad text-xl"></i>
-          </div>
-          <h2 class="">Sobre EcoRunner</h2>
-        </span>
-        <p>
-          O EcoRunner surgiu como um projeto para as aulas de
-          <b>PI - Projeto Interdisciplinar</b> do curso de Ciência da
-          Computação. É um jogo interativo onde o jogador tem o objetivo de
-          salvar o mundo por meio de práticas de sustentabilidade ambiental.
-        </p>
-        <p class="my-4">
-          O Jogo em si é um Platformer 2D inspirado no clássico
-          <a
-            href="https://en.wikipedia.org/wiki/Super_Mario_Bros."
-            target="_blank"
-            ><i class="text-baltic-blue-500 hover:text-baltic-blue-700"
-              >Super Mario Bros</i
-            ></a
-          >, onde o jogador que completar todos os objetivos no menor tempo
-          possível solucionando missões relacionadas à sustentabilidade
-          ambiental.
-        </p>
-        <p class="mt-4">
-          <b>Todo segundo conta, então comece a jogar agora!</b>
-        </p>
-        <div class="w-full mt-4 flex gap-2 justify-start items-center">
-          <button
-            class="border-b-4 border-b-radioactive-grass-700 cursor-pointer bg-radioactive-grass-500 font-bold text-white hover:bg-radioactive-grass-700 rounded-lg px-4 py-2"
-          >
-            Jogar no Navegador
-          </button>
-          <button
-            class="border-b-4 border-b-baltic-blue-700 cursor-pointer bg-baltic-blue-500 font-bold text-white hover:bg-baltic-blue-700 rounded-lg px-4 py-2"
-          >
-            Baixar
-          </button>
-        </div>
-        <span class="text-2xl mt-12 mb-4 font-bold flex gap-2">
-          <div class="flex justify-center items-center">
-            <i class="fa-solid fa-university text-xl"></i>
-          </div>
-          <h2 class="">Centro Universitário Filadélfia - UniFil</h2>
-        </span>
-        <p>
-          Esse projeto foi feito na unidade curricular de
-          <b
-            >Projeto Interdisciplinar do curso de Ciência da Computação da
+    <div class="flex flex-col flex-1 overflow-y-scroll">
+      <header
+        class="px-4 sm:px-16 sticky bg-white 00 w-full top-14 sm:top-0 py-2 border-b border-b-gray-200"
+      >
+        <h1 class="text-3xl font-bold sm:">EcoRunner</h1>
+      </header>
+      <main
+        class="pt-22 transition-all pb-8 px-4 sm:px-16 sm:pt-8 sm: max-w-screen-xl text-gray-700"
+      >
+        <article>
+          <span class="text-2xl mb-2 font-bold flex gap-2">
+            <div class="flex justify-center items-center">
+              <i class="fa-solid fa-gamepad text-xl"></i>
+            </div>
+            <h2 class="">Sobre EcoRunner</h2>
+          </span>
+          <p>
+            O EcoRunner surgiu como um projeto para as aulas de
+            <b>PI - Projeto Interdisciplinar</b> do curso de Ciência da
+            Computação. É um jogo interativo onde o jogador tem o objetivo de
+            salvar o mundo por meio de práticas de sustentabilidade ambiental.
+          </p>
+          <p class="my-4">
+            O Jogo em si é um Platformer 2D inspirado no clássico
             <a
-              href="https://unifil.br/"
+              href="https://en.wikipedia.org/wiki/Super_Mario_Bros."
               target="_blank"
+              ><i class="text-baltic-blue-500 hover:text-baltic-blue-700"
+                >Super Mario Bros</i
+              ></a
+            >, onde o jogador que completar todos os objetivos no menor tempo
+            possível solucionando missões relacionadas à sustentabilidade
+            ambiental.
+          </p>
+          <p class="mt-4">
+            <b>Todo segundo conta, então comece a jogar agora!</b>
+          </p>
+          <div class="w-full mt-4 flex gap-2 justify-start items-center">
+            <button
+              class="border-b-4 border-b-radioactive-grass-700 cursor-pointer bg-radioactive-grass-500 font-bold text-white hover:bg-radioactive-grass-700 rounded-lg px-4 py-2"
+            >
+              Jogar no Navegador
+            </button>
+            <button
+              class="border-b-4 border-b-baltic-blue-700 cursor-pointer bg-baltic-blue-500 font-bold text-white hover:bg-baltic-blue-700 rounded-lg px-4 py-2"
+            >
+              Baixar
+            </button>
+          </div>
+          <span class="text-2xl mt-12 mb-4 font-bold flex gap-2">
+            <div class="flex justify-center items-center">
+              <i class="fa-solid fa-university text-xl"></i>
+            </div>
+            <h2 class="">Centro Universitário Filadélfia - UniFil</h2>
+          </span>
+          <p>
+            Esse projeto foi feito na unidade curricular de
+            <b
+              >Projeto Interdisciplinar do curso de Ciência da Computação da
+              <a
+                href="https://unifil.br/"
+                target="_blank"
+                class="text-baltic-blue-500 hover:text-baltic-blue-700"
+              >
+                <i>UniFil</i>.
+              </a></b
+            >
+          </p>
+          <p>
+            Consistindo no desenvolvimento de um jogo digital, onde foram
+            aplicados conceitos de lógica de programação, estruturas de dados e
+            design de interfaces, com foco na experiência do usuário e na
+            interatividade.
+          </p>
+          <img src="images/unifil_logo.png" width="200px" alt="Logo UniFil" />
+          <span class="text-2xl mt-12 mb-4 font-bold flex gap-2">
+            <div class="flex justify-center items-center">
+              <i class="fa-solid fa-book text-xl"></i>
+            </div>
+            <h2 class="">O Que aprendemos com o projeto?</h2>
+          </span>
+        </article>
+      </main>
+      <footer class="bg-gray-200">
+        <section
+          class="bg-gray-100 flex px-4 sm:px-16 flex-wrap xl:gap-0 gap-8 py-8"
+        >
+          <article class="max-w-screen-xl sm:">
+            &copy; 2026-<span id="year"></span
+            ><a
+              href="https://witortena.netlify.app"
               class="text-baltic-blue-500 hover:text-baltic-blue-700"
             >
-              <i>UniFil</i>.
-            </a></b
-          >
-        </p>
-        <p>
-          Consistindo no desenvolvimento de um jogo digital, onde foram
-          aplicados conceitos de lógica de programação, estruturas de dados e
-          design de interfaces, com foco na experiência do usuário e na
-          interatividade.
-        </p>
-        <img src="images/unifil_logo.png" width="200px" alt="Logo UniFil" />
-        <span class="text-2xl mt-12 mb-4 font-bold flex gap-2">
-          <div class="flex justify-center items-center">
-            <i class="fa-solid fa-book text-xl"></i>
-          </div>
-          <h2 class="">O Que aprendemos com o projeto?</h2>
-        </span>
-      </article>
-    </main>
-    <footer class="bg-gray-200">
-      <section
-        class="bg-gray-100 flex px-4 sm:px-16 flex-wrap xl:gap-0 gap-8 py-8"
-      >
-        <article class="max-w-screen-xl sm:ml-62">
-          &copy; 2026-<span id="year"></span
-          ><a
-            href="https://witortena.netlify.app"
-            class="text-baltic-blue-500 hover:text-baltic-blue-700"
-          >
-            Witor Tenã</a
-          >. Todos os direitos reservados.
-          <br />
-          Centro Universitário Filadélfia - UniFil
+              Witor Tenã</a
+            >. Todos os direitos reservados.
+            <br />
+            Centro Universitário Filadélfia - UniFil
 
-          <script>
-            document.getElementById("year").textContent =
-              new Date().getFullYear();
-          </script>
-          <div class="flex gap-2 mt-2 items-center">
-            <img src="images/unifil_logo.png" alt="Logo UniFil" width="20px" />
-            <p class="text-sm text-green-700 font-bold hover:text-green-900">
-              <a href="https://witortena.netlify.app">WT_</a>
-            </p>
+            <script>
+              document.getElementById("year").textContent =
+                new Date().getFullYear();
+            </script>
+            <div class="flex gap-2 mt-2 items-center">
+              <img
+                src="images/unifil_logo.png"
+                alt="Logo UniFil"
+                width="20px"
+              />
+              <p class="text-sm text-green-700 font-bold hover:text-green-900">
+                <a href="https://witortena.netlify.app">WT_</a>
+              </p>
+            </div>
+          </article>
+          <div class="max-w-screen-xl sm:">
+            <article>
+              Ilustrações por
+              <a
+                class="italic text-baltic-blue-500 hover:text-baltic-blue-700"
+                href="https://undraw.co/illustrations/8"
+                target="_blank"
+                >UnDraw</a
+              >
+            </article>
+            <article>
+              Fontes por
+              <a
+                class="italic text-baltic-blue-500 hover:text-baltic-blue-700"
+                href="https://fonts.google.com/"
+                target="_blank"
+                >Google Fonts</a
+              >
+            </article>
+            <article>
+              Ícones por
+              <a
+                class="italic text-baltic-blue-500 hover:text-baltic-blue-700"
+                href="https://fontawesome.com/"
+                target="_blank"
+                >Font Awesome</a
+              >
+            </article>
           </div>
-        </article>
-        <div class="max-w-screen-xl sm:ml-62">
-          <article>
-            Ilustrações por
-            <a
-              class="italic text-baltic-blue-500 hover:text-baltic-blue-700"
-              href="https://undraw.co/illustrations/8"
-              target="_blank"
-              >UnDraw</a
-            >
-          </article>
-          <article>
-            Fontes por
-            <a
-              class="italic text-baltic-blue-500 hover:text-baltic-blue-700"
-              href="https://fonts.google.com/"
-              target="_blank"
-              >Google Fonts</a
-            >
-          </article>
-          <article>
-            Ícones por
-            <a
-              class="italic text-baltic-blue-500 hover:text-baltic-blue-700"
-              href="https://fontawesome.com/"
-              target="_blank"
-              >Font Awesome</a
-            >
-          </article>
-        </div>
-      </section>
-      <section class="px-4 sm:px-16 max-w-screen-xl pb-8 pt-8 sm:ml-62">
-        <h3 class="font-bold mb-2">Mapa do Site</h3>
-        <ul>
-          <li>
-            <a
-              class="hover:text-baltic-blue-700 text-baltic-blue-500"
-              href="index.html"
-              >Início</a
-            >
-          </li>
-          <li>
-            <a
-              class="hover:text-baltic-blue-700 text-baltic-blue-500"
-              href="game.html"
-              >EcoRunner</a
-            >
-          </li>
-          <li>
-            <a
-              class="hover:text-baltic-blue-700 text-baltic-blue-500"
-              href="about.html"
-              >Quem Somos</a
-            >
-          </li>
-          <li>
-            <a
-              class="hover:text-baltic-blue-700 text-baltic-blue-500"
-              href="community.html"
-              >Comunidade</a
-            >
-          </li>
-        </ul>
-      </section>
-    </footer>
-
+        </section>
+        <section class="px-4 sm:px-16 max-w-screen-xl pb-8 pt-8 sm:">
+          <h3 class="font-bold mb-2">Mapa do Site</h3>
+          <ul>
+            <li>
+              <a
+                class="hover:text-baltic-blue-700 text-baltic-blue-500"
+                href="index.html"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-baltic-blue-700 text-baltic-blue-500"
+                href="game.html"
+                >EcoRunner</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-baltic-blue-700 text-baltic-blue-500"
+                href="about.html"
+                >Quem Somos</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-baltic-blue-700 text-baltic-blue-500"
+                href="community.html"
+                >Comunidade</a
+              >
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </div>
     <script>
       const sidebar = document.getElementById("sidebar");
       const openBtn = document.getElementById("menu-btn");
