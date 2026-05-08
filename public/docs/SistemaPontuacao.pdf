@@ -1,0 +1,22 @@
+Sistema de Pontuação
+O jogo utiliza um sistema de pontuação baseado exclusivamente no tempo de conclusão da partida. Nesse sistema, não existem pontos numéricos tradicionais; o desempenho do jogador é avaliado pelo menor tempo alcançado.
+Objetivo
+O objetivo do jogador é finalizar todos os desafios no menor tempo possível.
+Funcionamento
+•	O cronômetro inicia no começo da partida; 
+•	O tempo é contado continuamente durante o jogo; 
+•	Ao concluir todos os objetivos, o cronômetro é encerrado; 
+Critério de Desempenho
+Quanto menor o tempo de conclusão, melhor será o desempenho do jogador.
+Exemplo:
+Tempo	Resultado
+10 min 35 s	Melhor
+15 min 12 s	Médio
+22 min 40 s	Inferior
+Registro de Recordes
+O jogo armazena localmente o melhor tempo obtido pelo jogador, permitindo a comparação entre partidas futuras na mesma seção.u
+Exibição na Interface
+O cronômetro permanece visível durante toda a partida para que o jogador acompanhe seu desempenho em tempo real.
+Observações
+Por ser um jogo offline, todos os tempos e recordes são armazenados apenas no dispositivo do jogador.
+
