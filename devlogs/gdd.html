@@ -158,27 +158,27 @@
       <header
         class="p-12 w-full flex items-center justify-center hidden sm:block"
       >
-        <img src="images/guy.png" class="rounded-full" />
+        <img src="../images/guy.png" class="rounded-full" />
       </header>
 
       <nav class="flex-1">
         <ul class="font-bold">
           <li class="hover:bg-gold-700">
-            <a href="index.html" class="flex items-center gap-4 py-2 px-8">
+            <a href="../index.html" class="flex items-center gap-4 py-2 px-8">
               <i class="fa-solid fa-house w-4"></i>
               Início
             </a>
           </li>
 
           <li class="hover:bg-gold-700">
-            <a href="game.html" class="flex items-center gap-4 py-2 px-8">
+            <a href="../game.html" class="flex items-center gap-4 py-2 px-8">
               <i class="fa-solid fa-gamepad w-4"></i>
               EcoRunner
             </a>
           </li>
 
           <li class="hover:bg-gold-700">
-            <a href="about.html" class="flex items-center gap-4 py-2 px-8">
+            <a href="../about.html" class="flex items-center gap-4 py-2 px-8">
               <i class="fa-solid fa-file-lines w-4"></i>
               Quem Somos
             </a>
@@ -186,7 +186,7 @@
 
           <li class="hover:bg-gold-700 bg-gold-200">
             <a
-              href="devlogs.html"
+              href="../devlogs.html"
               class="flex items-center text-baltic-blue-500 gap-4 py-2 px-8"
             >
               <i class="fa-solid fa-book w-4"></i>
@@ -197,7 +197,7 @@
       </nav>
 
       <a
-        href="community.html"
+        href="../community.html"
         class="bg-baltic-blue-500 m-8 border-b-4 border-b-baltic-blue-700 hover:bg-baltic-blue-700 rounded-lg font-bold text-center py-2 px-4 flex items-center justify-center gap-2"
       >
         <i class="fa-solid fa-people-group"></i>
@@ -213,78 +213,227 @@
       <main
         class="pt-22 transition-all pb-8 px-4 sm:px-16 sm:pt-8 max-w-screen-xl text-gray-700"
       >
-        <section class="flex flex-wrap gap-8">
-          <a href="devlogs/narrativa.html">
-            <article
-              class="flex flex-col max-w-80 gap-2 justify-center rounded-t-lg bg-gray-100"
-            >
-              <div class="border-b border-b-gray-200 rounded-t-lg py-2 px-4">
-                <h3 class="text-2xl font-bold">
-                  <i class="fa-solid fa-flask mr-2"></i>Narrativa
-                </h3>
-              </div>
+        <article class="gdd-container">
+          <header>
+            <h1>Game Design Document (GDD) — EcoRunner</h1>
+            <br />
+            <p>
+              <strong>Integrantes:</strong> Marcos Yudi, Rafael Utiyama, Thiago
+              Moreira Antoniassi, Witor Tenã
+            </p>
+          </header>
+          <br />
 
-              <div
-                class="border-b text-lg font-normal flex border-b-4 border-b-gray-200 flex-col gap-2 flex-wrap border-b-gray-200 rounded-b-lg pb-4 pt-0 px-4"
-              >
-                <p class="line-clamp-4">
-                  Em um futuro não muito distante, o planeta enfrenta uma grande
-                  crise ambiental. As cidades estão cobertas por fumaça, rios
-                  estão poluídos e florestas desaparecem
-                </p>
-                <button
-                  class="flex gap-2 mt-4 w-full justify-center bg-baltic-blue-500 items-center text-white cursor-pointer p-2 text-center font-bold hover:bg-baltic-blue-700 border-b-4 border-b-baltic-blue-700 rounded-lg"
-                >
-                  <p class="">Ver Devlog</p>
-                  <i class="fa-solid fa-download"></i>
-                </button>
-              </div>
-            </article>
-          </a>
-          <a href="devlogs/gdd.html">
-            <article
-              class="flex flex-col max-w-80 gap-2 justify-center rounded-t-lg bg-gray-100"
-            >
-              <div class="border-b border-b-gray-200 rounded-t-lg py-2 px-4">
-                <h3 class="text-2xl font-bold">
-                  <i class="fa-solid fa-flask mr-2"></i>GDD
-                </h3>
-              </div>
+          <section>
+            <h2>1. Gênero</h2>
+            <ul>
+              <li>Educativo</li>
+              <li>Aventura</li>
+              <li>Platformer 2D</li>
+            </ul>
+          </section>
 
-              <div
-                class="border-b text-lg font-normal flex border-b-4 border-b-gray-200 flex-col gap-2 flex-wrap border-b-gray-200 rounded-b-lg pb-4 pt-0 px-4"
+          <section>
+            <h2>2. Plataforma</h2>
+            <ul>
+              <li>PC</li>
+              <li>Navegador</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>3. Proposta do Jogo</h2>
+            <p>
+              EcoRunner é um jogo 2D de plataforma inspirado em clássicos como o
+              jogo Super Mario Bros. O jogador controla Leco, um garoto que
+              precisa completar missões relacionadas à sustentabilidade
+              ambiental antes que os danos ao planeta se tornem irreversíveis.
+            </p>
+            <p>
+              O objetivo principal é concluir todos os desafios no menor tempo
+              possível, incentivando rapidez, estratégia e consciência
+              ambiental.
+            </p>
+          </section>
+
+          <section>
+            <h2>4. Narrativa</h2>
+            <p>
+              Em um futuro não muito distante, o planeta enfrenta uma grande
+              crise ambiental. As cidades estão cobertas por fumaça, rios estão
+              poluídos e florestas desaparecem rapidamente. Para tentar salvar o
+              mundo, cientistas criam a EcoRede, um sistema que envia missões
+              urgentes para pessoas capazes de agir rápido e fazer a diferença.
+            </p>
+            <p>
+              Caso uma missão não seja concluída, ela falha, causando perda
+              total do objetivo ambiental.
+            </p>
+            <p>
+              O protagonista é <strong>Leco</strong>, um garoto inteligente,
+              curioso e apaixonado pela natureza. Morador da pequena cidade de
+              VerdeVale, ele sempre acreditou que pequenas atitudes podem mudar
+              o mundo. Depois de muito esperar, Leco finalmente é chamado para
+              integrar a equipe responsável por salvar o planeta.
+            </p>
+            <p>
+              Leco possui uma tecnologia secreta: sempre que falha em uma
+              missão, ele consegue voltar alguns minutos no tempo e tentar
+              novamente. Dessa forma, aprende com seus erros, melhora suas
+              estratégias e nunca desiste de proteger a natureza.
+            </p>
+          </section>
+
+          <section>
+            <h2>5. Objetivo do Jogador</h2>
+            <ul>
+              <li>Completar todas as missões ambientais;</li>
+              <li>Superar obstáculos presentes nas fases;</li>
+              <li>Resolver desafios relacionados à sustentabilidade;</li>
+              <li>Finalizar o jogo no menor tempo possível.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>6. Mecânicas Principais</h2>
+            <ul>
+              <li>Movimentação lateral em plataforma 2D;</li>
+              <li>Pulo para superar obstáculos;</li>
+              <li>Coleta de itens importantes para as missões;</li>
+              <li>Interação com elementos do cenário;</li>
+              <li>Sistema de reinício após falha;</li>
+              <li>Cronômetro em tempo real durante toda a partida;</li>
+              <li>Exploração do cenário para descobrir desafios;</li>
+              <li>Montar estratégias de quais desafios concluir.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>7. Regras de Funcionamento</h2>
+            <ul>
+              <li>O jogador deve completar o máximo de objetivos da fase;</li>
+              <li>Caso falhe, deverá reiniciar o desafio;</li>
+              <li>O cronômetro nunca pausa durante a partida;</li>
+              <li>
+                O desempenho é baseado no tempo final e quantidade de missões
+                concluídas.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>8. Sistema de Pontuação</h2>
+            <p>
+              O cronômetro inicia no começo da partida e encerra quando o tempo
+              acaba ou o jogador termina todas as missões.
+            </p>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Tempo</th>
+                  <th>Resultado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10 min 35 s</td>
+                  <td>Melhor</td>
+                </tr>
+                <tr>
+                  <td>15 min 12 s</td>
+                  <td>Médio</td>
+                </tr>
+                <tr>
+                  <td>22 min 40 s</td>
+                  <td>Inferior</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              <small
+                >* Recordes são armazenados localmente no dispositivo.</small
               >
-                <p class="line-clamp-4">
-                  EcoRunner é um jogo 2D de plataforma inspirado em clássicos
-                  como o jogo Super Mario Bros. O jogador controla Leco, um
-                  garoto que precisa completar missões relacionadas à
-                  sustentabilidade
-                </p>
-                <button
-                  class="flex gap-2 mt-4 w-full justify-center bg-baltic-blue-500 items-center text-white cursor-pointer p-2 text-center font-bold hover:bg-baltic-blue-700 border-b-4 border-b-baltic-blue-700 rounded-lg"
-                >
-                  <p class="">Ver Devlog</p>
-                  <i class="fa-solid fa-download"></i>
-                </button>
-              </div>
-            </article>
-          </a>
-        </section>
+            </p>
+          </section>
+
+          <section>
+            <h2>9. Progressão do Jogo</h2>
+            <p>
+              O jogador avança conforme completa mais desafios ambientais e faz
+              tempos melhores.
+            </p>
+          </section>
+
+          <section>
+            <h2>10. Desafios</h2>
+            <ul>
+              <li>Coleta de resíduos recicláveis;</li>
+              <li>Limpeza de áreas poluídas;</li>
+              <li>Recuperação de áreas naturais;</li>
+              <li>Superação de obstáculos ambientais;</li>
+              <li>Missões com limite indireto de tempo.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>11. Visual e Ambientação</h2>
+            <p>
+              Visual em <strong>pixel art 2D</strong>. Os cenários representam:
+            </p>
+            <ul>
+              <li>Florestas;</li>
+              <li>Cidades poluídas;</li>
+              <li>Rios contaminados;</li>
+              <li>Áreas naturais em recuperação.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>12. Recompensas</h2>
+            <ul>
+              <li>Melhores tempos;</li>
+              <li>Sensação de progresso;</li>
+              <li>Superação pessoal do próprio recorde.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>13. Dificuldade</h2>
+            <p>Média, com foco em:</p>
+            <ul>
+              <li>Obstáculos complexos;</li>
+              <li>Missões com níveis variados;</li>
+              <li>Necessidade de precisão e velocidade.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>14. Público-Alvo</h2>
+            <ul>
+              <li>Estudantes e jovens jogadores;</li>
+              <li>Pessoas interessadas em sustentabilidade;</li>
+              <li>Fãs de jogos de plataforma clássicos.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>15. Objetivo Educacional</h2>
+            <p>
+              Conscientizar sobre sustentabilidade, preservação, impactos da
+              poluição e a importância de pequenas ações individuais de forma
+              interativa.
+            </p>
+          </section>
+        </article>
         <nav class="flex justify-end mt-4">
           <div class="flex justify-end">
             <a
-              href="about.html"
-              class="flex items-center cursor-pointer bg-baltic-blue-100 p-2 rounded-l-lg hover:bg-baltic-blue-200 w-fit justify-center text-baltic-blue-500 hover:text-baltic-blue-700"
+              href="../devlogs.html"
+              class="flex items-center cursor-pointer bg-baltic-blue-100 p-2 rounded-lg hover:bg-baltic-blue-200 w-fit justify-center text-baltic-blue-500 hover:text-baltic-blue-700"
             >
               <i class="mr-2 fa-solid fa-arrow-left text-sm"></i>
-              <p class="">Voltar</p>
-            </a>
-            <a
-              href="community.html"
-              class="flex items-center cursor-pointer bg-baltic-blue-100 p-2 rounded-r-lg hover:bg-baltic-blue-200 w-fit justify-center text-baltic-blue-500 hover:text-baltic-blue-700"
-            >
-              <p class="">Próximo</p>
-              <i class="ml-2 fa-solid fa-arrow-right text-sm"></i>
+              <p class="">Voltar para Devlogs</p>
             </a>
           </div>
         </nav>
@@ -310,7 +459,7 @@
             </script>
             <div class="flex gap-2 mt-2 items-center">
               <img
-                src="images/unifil_logo.png"
+                src="../images/unifil_logo.png"
                 alt="Logo UniFil"
                 width="20px"
               />
